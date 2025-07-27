@@ -6,12 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Qual é a música? - Roberto Carlos</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#002B5B">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </head>
+
 <body>
 
   <!-- Tela de abertura -->
   <div id="tela-abertura" class="tela">
-    <img src="imagens/abertura.jpg" alt="Roberto Carlos" class="img-abertura">
+    <img src="imagens/rc3.jpg" alt="Roberto Carlos" class="img-abertura">
     <audio id="musicaAbertura" autoplay loop>
       <source src="audios/emocoes.mp3" type="audio/mpeg">
     </audio>
@@ -23,6 +32,7 @@
 
   <!-- Tela do jogo -->
   <div class="container" id="quiz" style="display:none;">
+    <img id="fotoRoberto" class="foto-roberto" src="imagens/rc1.jpg" alt="Roberto Carlos">
     <h1>🌹 Qual é a música?</h1>
     <audio id="audio" controls></audio>
     <button id="replay">🔁 Ouvir novamente</button>
@@ -32,5 +42,9 @@
   </div>
 
   <script src="js/script.js"></script>
+
+  <audio id="somAcerto" src="audios/som_acerto.mp3"></audio>
+  <audio id="somErro" src="audios/som_erro.mp3"></audio>
 </body>
+
 </html>
