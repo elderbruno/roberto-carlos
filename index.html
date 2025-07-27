@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qual é a música? - Roberto Carlos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Tela de abertura -->
+  <div id="tela-abertura" class="tela">
+    <img src="imagens/abertura.jpg" alt="Roberto Carlos" class="img-abertura">
+    <audio id="musicaAbertura" autoplay loop>
+      <source src="audios/emocoes.mp3" type="audio/mpeg">
+    </audio>
+    <div class="overlay">
+      <h1>🎤 Emoções com Roberto Carlos</h1>
+      <button onclick="iniciarJogo()">Começar</button>
+    </div>
+  </div>
+
+  <!-- Tela do jogo -->
+  <div class="container" id="quiz" style="display:none;">
+    <h1>🌹 Qual é a música?</h1>
+    <audio id="audio" controls></audio>
+    <button id="replay">🔁 Ouvir novamente</button>
+    <div id="opcoes"></div>
+    <div id="feedback"></div>
+    <button id="proxima" style="display:none;">Próxima música</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

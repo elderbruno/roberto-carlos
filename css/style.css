@@ -1,0 +1,118 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('../imagens/fundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 95%;
+  width: 400px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 25px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 28px;
+  color: #0b2e59;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 8px 6px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2056a3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #103b7d;
+}
+
+#audio {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#feedback {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+#opcoes button {
+  width: 80%;
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+}
+
+#proxima {
+  background-color: #1d8348;
+}
+
+#proxima:hover {
+  background-color: #145a32;
+}
+
+.tela {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 1s ease;
+}
+
+.img-abertura {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  font-size: 20px;
+  padding: 12px 25px;
+  background-color: #c62828;
+  border: none;
+  border-radius: 12px;
+  color: white;
+}
+
+h1::before {
+  content: "🌹 ";
+}
