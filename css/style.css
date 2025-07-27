@@ -160,6 +160,7 @@ body, html {
   text-shadow: 2px 2px 5px black;
 }
 
+/* Melhor responsividade e centralização */
 body, html {
   margin: 0;
   padding: 0;
@@ -167,17 +168,19 @@ body, html {
   background-color: #002B5B !important;
 }
 
-/* Corrigir apenas a seção do quiz */
 #quiz {
-  padding: 30px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px 15px;
   box-sizing: border-box;
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 .foto-roberto {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   height: auto;
   object-fit: contain;
   border-radius: 12px;
@@ -185,8 +188,22 @@ body, html {
 }
 
 #opcoes button {
-  width: 100%;
+  width: 90%;
   max-width: 400px;
-  margin: 10px auto;
+  margin: 8px auto;
   display: block;
+}
+
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.container, .foto-roberto, audio, button {
+  max-width: 100%;
 }
