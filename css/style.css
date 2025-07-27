@@ -159,3 +159,37 @@ body, html {
   color: white !important;
   text-shadow: 2px 2px 5px black;
 }
+
+/* Melhor responsividade e centralização */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #002B5B !important;
+}
+
+#quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.foto-roberto {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+#opcoes button {
+  width: 90%;
+  max-width: 400px;
+  margin: 8px auto;
+  display: block;
+}
